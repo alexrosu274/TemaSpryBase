@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/Ad.css" />
+    <title>Document</title>
+</head>
+<body>
+    <section class="ads">
+        <% for(let i = 0; i < ads.length ; ++i) { %>
+            <section class="ad">
+                    <section>
+                        <h3><%=ads[i].title%></h3>
+                            <p>Descrierea ad-ului este:<%=ads[i].description%></p>
+                            <p>Tipul camerei este:<%=ads[i].room%></p>
+                            <p>Adresa apartamentului este:<%=ads[i].address %></p>
+                        <section class="contactAndPrice">
+                            <p>Price:<%=ads[i].price %> euro</p>
+                            <p>Phone:<%=ads[i].phone %></p>
+                        </section>
+                    </section>
+                <section class="apartamentImage">
+                    <% for(let j = 0; j < ads[i].image.length ; ++j) { %> 
+                        <img  src="<%=ads[i].image[j]%>" alt="apartament"><br>  
+                   <%}%>
+                </section>
+            </section>
+        <%}%>
+    </section>
+</body>
+</html>   

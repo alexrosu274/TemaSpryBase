@@ -1,0 +1,64 @@
+body {
+    margin:0;
+    padding:0;
+    background-image:url('/images/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+body button{
+    background-color:#1b262c;
+    width:10em;
+    height:4em;
+    border-radius:1em;
+    border:2px solid #c7b198;
+    color:#3282b8;
+    opacity:0.8; 
+    margin-right:1em;
+}
+
+body button:hover{
+    background-color:#f5f1da;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body p{
+    text-align: center;
+}
+
+.forms {
+    display: flex;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.message {
+    width:100%;
+    text-align: center;
+    margin:2em;
+    color: #1b262c;
+}
+
+.message, .forms button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    font-weight: bold; 
+} 
+
+.message h1{
+    font-size:4em;
+    margin-bottom:0.25em;   
+}
+
+@media screen and (max-width: 600px) {
+    .message h1{
+        font-size:2em;
+        margin-bottom:0.25em;   
+    }
+  }

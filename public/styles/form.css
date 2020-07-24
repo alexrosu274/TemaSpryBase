@@ -1,0 +1,23 @@
+body {
+    margin:0;
+    padding:0;
+    background-image:url('/images/img1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+form {
+    background-color: black;
+    color:white;
+    display: inline-block;
+    position: fixed;
+    opacity:0.7;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+p,label,textarea,input,button{
+   margin:0.5em;
+}
